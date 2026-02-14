@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- el css change o naur? -->
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz San Valentín mylove, Pawi❤️</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(#ffe6f0, #fff);
+      text-align: center;
+      padding: 30px;
+      color: #444;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e63950;
+    }
+
+    .heart {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+  const esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (!esMovil) {
+    document.body.innerHTML = `
+    `;
+  }
+</script>
+
+  <h1>Feliz San Valentín Pawi ❤️</h1>
+  <p class="heart">🩵🩵🩵</p>
+
+  
+  <div class="card">
+    <h2>Esta pagina web es para ti mec 💌</h2>
+    <p>
+      Hice esta página solo para ti, porque te quiero
+y porque significas mucho para mí, preciosa.
+
+Gracias por todo lo que haces por mí, por sonreír
+y por hacer mi vida más bonita.
+
+Pawi, en el momento que te escribo esto hacemos 6 meses juntos.
+Estos meses se me pasaron muy rápido y a tu lado
+todo lo difícil se siente más fácil y bonito.
+
+Gracias por estar, por hacerme feliz y por ser tú.
+Ojalá sigamos sumando muchos meses más juntos.
+
+Te amo 🩵
+    </p>
+  </div>
+
+  <!-- Mensaje aleatorio -->
+  <div class="card">
+    <h2>Necesito que sepas que: 💕</h2>
+    <p id="mensaje"></p>
+  </div>
+
+  <!-- Fotos -->
+  <div class="card">
+    <h2>Nuestros gatuts 😸🫶😽📸</h2>
+    <img src="image.jpg" alt="Foto Macnhiu">
+    <img src="IMG_0276.jpg" alt="Foto rayito">
+    <img src="IMG_6632.jpg" alt="Foto rayito">
+  </div>
+
+  <!-- Canción -->
+  <div class="card">
+    <h2>La mejor playlist de spoty 😸🫶🎶</h2>
+    <p>my music gf 💕</p>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Mr3Uj9BWgunU8FkAmaHeJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <!-- Contador -->
+  <div class="card">
+    <h2>Tiempo juntos 🗓️</h2>
+    <p id="contador"></p>
+  </div>
+
+  <!-- NUEVO APARTADO -->
+  <div class="card">
+    <h2>Próxima foto juntos 📸🩵</h2>
+    <img src="imageje.png" alt="aqui iria nuestra proxima foto juntos, por el momento ocupa el lugar esta jejeje">
+    <p>aqui pondre en el futuro una foto juntos, por el momento ocupa el lugar esta jejeje</p>
+  </div>
+
+  <!-- Botón -->
+  <div class="card">
+    <button onclick="alert('Y yo tmb 😌💘 Te quiero')">
+      entonces.. me quieres? 😏
+    </button>
+  </div>
+
+  <script>
+    // Mensajes aleatorios
+    const mensajes = [
+      "Tell me if you need me and call me if you feelin alone Cause Im here, Im always right here💖",
+      "Si Vibra el móvil, deseo que seas tú 🩵",
+      "Cuando estamos juntos el tiempo vuela, ni nos damos cuenta 😺😸" ,
+      "'Toy ahorrando pa' comprarte el sol, días grises cambian con tu voz 🫵😽",
+      "Whatever you want, whatever you need... My Heart Belongs to U 💕" ,
+      "La distancia no decide ¿Qué más da que estemos lejos? Yo voy a buscarte rápido, no me quejo 🌍🤞🫶"
+    ];
+    document.getElementById("mensaje").innerText =
+      mensajes[Math.floor(Math.random() * mensajes.length)];
+
+    // Contador de días juntos
+    const inicio = new Date("2025-08-28"); 
+    const hoy = new Date();
+    const dias = Math.floor((hoy - inicio) / (1000 * 60 * 60 * 24));
+    document.getElementById("contador").innerText =
+      `Llevamos juntos ${dias} días ❤️`;
+  </script>
+
+</body>
+</html>
